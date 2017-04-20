@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import NavBarHeader from './components/navBarHeader/navBarHeader.js';
+import SectionContainer from './components/sectionContainer/sectionContainer.js';
 
 
 class App extends Component {
@@ -11,9 +12,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>*/}
         <NavBarHeader></NavBarHeader>
-        <section className="App-content" id="app-content">
+        {/*<section className="App-content" id="app-content">*/}
           {/*<Login></Login>*/}
-        </section>
+        {/*</section>*/}
+        <SectionContainer></SectionContainer>
       </main>
     );
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavBarHeader from '../../components/navBarHeader/navBarHeader.js';
 import './sectionContainer.css';
 
 class SectionContainer extends Component{
@@ -9,7 +10,15 @@ class SectionContainer extends Component{
         }
     }
     render(){
-        return (<section>vamos!!</section>)
+         if (this.props.name === "home") {
+           return (<section name={this.props.name} className={this.props.name}>
+              <NavBarHeader></NavBarHeader>
+           </section>)
+        }else{
+           return (<section  className={this.props.name}>
+               <a name={this.props.name}> </a> 
+                </section>)
+        }    
     }
 }
 

@@ -1,4 +1,27 @@
 .App section{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;  
+}
+
+.App .home{
     background-image: url("../../images/banner1.jpg");
-    height: 100%;
+}
+
+.App .quienesSomos{
+    background-image: url("../../images/banner2.jpg");
+}
+
+.App .nuestroEstilo{
+    background-image: url("../../images/banner3.jpg");
+}
+
+.App .galeria{
+    background:black;
+}
+
+.App .contactate{
+    background-image: url("../../images/banner4.jpg");
 }

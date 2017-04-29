@@ -1,8 +1,5 @@
 .App .navBarHeader{
     background: transparent;
     border: transparent;
-}
-
-.App .navBarHeader .container{
-    margin-right:5%;
+    margin-bottom: 0;
 }

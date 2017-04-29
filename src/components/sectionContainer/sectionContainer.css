@@ -3,7 +3,7 @@
     background-position:center;
     background-attachment: fixed;
     background-size: cover;
-    height: 700px;  
+    min-height: 100vh;
 }
 
 .App .home{
@@ -24,4 +24,17 @@
 
 .App .contactate{
     background-image: url("../../images/banner4.jpg");
+}
+
+.App .img-logo{   
+    position: fixed;
+    width: 200px;
+    padding: 2%;
+}
+
+.App .home-article{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
 }

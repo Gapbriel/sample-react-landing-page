@@ -15,6 +15,7 @@ class ArticleHome extends Component{
                 <h1>{this.state.title}</h1>
                 <h3>{this.state.descrip}</h3>
                 <h2><em>{this.state.text}</em></h2>
+                
                </article>)    
             
     }

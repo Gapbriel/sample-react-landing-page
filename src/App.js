@@ -8,10 +8,6 @@ class App extends Component {
     return (
       <main className="App">
         <SectionContainer name="home"></SectionContainer>
-        <SectionContainer name="quienesSomos"></SectionContainer>
-        <SectionContainer name="nuestroEstilo"></SectionContainer>
-        <SectionContainer name="galeria"></SectionContainer>
-        <SectionContainer name="contactate"></SectionContainer>
       </main>
     );
   }

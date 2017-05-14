@@ -1,40 +1,48 @@
-.App section{
-    background-repeat:no-repeat;
-    background-position:center;
+.App section {
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
     min-height: 100vh;
 }
 
-.App .home{
+.App .home {
     background-image: url("../../images/banner1.jpg");
 }
 
-.App .quienesSomos{
+.App .quienesSomos {
     background-image: url("../../images/banner2.jpg");
 }
 
-.App .nuestroEstilo{
+.App .nuestroEstilo {
     background-image: url("../../images/banner3.jpg");
 }
 
-.App .galeria{
-    background:black;
+.App .galeria {
+    background: black;
 }
 
-.App .contactate{
+.App .contactate {
     background-image: url("../../images/banner4.jpg");
 }
 
-.App .img-logo{   
-    position: fixed;
+.App .img-logo {
+    position: absolute;
     width: 200px;
     padding: 2%;
 }
 
-.App .home-article{
+.App .home-article {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 100%
+}
+
+.App .quienesSomos,
+.App .nuestroEstilo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: space-around
 }

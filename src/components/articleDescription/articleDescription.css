@@ -1,0 +1,21 @@
+.articleDescription-container article{
+	background: #FFF;
+	padding: 0 30px 0 30px
+}
+
+.articleNuestroArticulo{
+	align-self: flex-start;
+}
+
+.articleQuienesSomos{
+	align-self: flex-end;
+}
+
+.articleNuestroArticulo p:before,
+.articleQuienesSomos p:before{
+	content: url("../../images/tijBar.png");
+    float: left;
+    width: 100%;
+    position: relative;
+    left: -4%;
+}

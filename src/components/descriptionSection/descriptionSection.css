@@ -1,0 +1,17 @@
+.App .articleDescription-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.App .next-button {
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import NavBarHeader from '../../components/navBarHeader/navBarHeader.js';
 import ArticleHome from '../../components/articleHome/articleHome.js';
-import NextSectionButton from '../../components/nextSectionButton/nextSectionButton.js';
 import logo from '../../images/logo.png';
 import './homeSection.css';
 

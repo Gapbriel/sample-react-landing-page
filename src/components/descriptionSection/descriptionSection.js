@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import NextSectionButton from '../../components/nextSectionButton/nextSectionButton.js';
 import ArticleDescription from '../../components/articleDescription/articleDescription.js';
+import GallerySection from '../../components/gallerySection/gallerySection.js';
+import FormContacto from '../../components/formContacto/formContacto.js';
 import './descriptionSection.css';
 
 
@@ -9,39 +11,73 @@ class descriptionSection extends Component {
         super(props);
         this.state = {
             quienesSomos: {
-                name:"articleQuienesSomos",
+                name: "articleQuienesSomos",
                 title: "Quiénes Somos",
                 content: "<strong>Somos lo nuevo. Somos innovación. Somos vanguardia</strong>. Queremos que nos visites y sientas que es un antes y un después. Estamos en Palermo. <strong>Nos define la frescura, la espontaneidad, las ganas de innovar</strong>. También la calidad humana de nuestro staff, en armonía con el concepto vanguardista de nuestra peluquería. <strong>Nuestros servicios incluyen cortes, peinados, afeitado, coloraciones, tratamientos, lavados, baños de crema y maquillaje</strong>"
             },
             nuestroEstilo: {
-                name:"articleNuestroArticulo",
+                name: "articleNuestroArticulo",
                 title: "Nuestro Estilo",
                 content: "En nuestro salón <strong>tú eres protagonista</strong>. Se trata de descubrir tus posibilidades, <strong>sacar a relucir tu personalidad</strong>. Exploramos las últimas tendencias, <strong>buscamos el look ideal</strong> para cada persona. <strong>En Vecchia podrás encontrar lo que necesitas para verte especial</strong>. Nuestro compromiso es con la moda y con nuestros clientes. <strong>Porque nuestro estilo es buscar y encontrar tu propio estilo</strong>.<br>"
+            },
+            'galeria': {
+                name: "articleHeaderGaleria",
+                title: "Galeria",
+                content: "Te invitamos a conocer lo que hacemos cada día con pasión y dedicación, Empeza a descubrir Vecchia, empezá a formar parte de lo nuevo en peluquería y estética."
+            },
+            'contactate': {
+                name: "articleHeadercontactate",
+                title: "contactate",
+                content:"¿te gustaría reservar un turno con nosotros? ¿tenés consultas para hacernos? Completá este formulario y te responderemos a la Brevedad"
             }
         }
     }
     render() {
-        // return (<NextSectionButton nextHref={'#' + this.props.name}></NextSectionButton>)
-        if (this.props.name === "quienesSomos") {
-            return (
-                <section name={this.props.name} className={ this.props.name}>
-                    <div className="articleDescription-container">
-                        <ArticleDescription typeDescription={this.state.quienesSomos}></ArticleDescription>
+        let description;
+        switch (this.props.name) {
+            case 'quienesSomos':
+                description = (
+                    <div className="description-flex-container"> 
+                        <div className="articleDescription-container">
+                            <ArticleDescription typeDescription={this.state.quienesSomos}></ArticleDescription>
+                        </div>
+                        <NextSectionButton></NextSectionButton>
                     </div>
-                    <NextSectionButton></NextSectionButton>
-                </section>
-            )
-        } else {
-            return (
-                <section name={this.props.name} className={ this.props.name }>
-                    <div className="articleDescription-container">
-                        <ArticleDescription typeDescription={this.state.nuestroEstilo}></ArticleDescription> 
-                     </div>   
-                    <NextSectionButton></NextSectionButton>
-                </section>
-            )
+                );
+                break;
+            case 'nuestroEstilo':
+                description = (
+                    <div className="description-flex-container">
+                        <div className="articleDescription-container">
+                            <ArticleDescription typeDescription={this.state.nuestroEstilo}></ArticleDescription> 
+                         </div>   
+                        <NextSectionButton></NextSectionButton>
+                    </div>
+                );
+                break;
+            case 'galeria':
+                description= (
+                    <div className="header-flex-container">
+                            <ArticleDescription typeDescription={this.state.galeria}></ArticleDescription>
+                            <GallerySection></GallerySection>  
+                    </div>
+                )
+                break;
+              case 'contactate':
+                description= (
+                    <div className="header-flex-container">
+                            <ArticleDescription typeDescription={this.state.contactate}></ArticleDescription>
+                            <FormContacto></FormContacto> 
+                      
+                    </div>
+                )
+                break;
+              default:
+                break;  
         }
-
+        return <section name={this.props.name} className={ this.props.name}>
+                            {description}
+                        </section>;
     }
 }
 

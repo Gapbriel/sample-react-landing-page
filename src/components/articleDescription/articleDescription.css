@@ -5,10 +5,12 @@
 
 .articleNuestroArticulo{
 	align-self: flex-start;
+	text-align:left;
 }
 
 .articleQuienesSomos{
 	align-self: flex-end;
+	text-align:left;
 }
 
 .articleNuestroArticulo p:before,
@@ -18,4 +20,30 @@
     width: 100%;
     position: relative;
     left: -4%;
+}
+
+.articleHeaderGaleria, 
+.articleHeadercontactate{
+	color:white;
+}
+
+.articleHeaderGaleria h1, 
+.articleHeadercontactate h1 {
+	border-bottom: 2px solid #b69a6e;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.articleHeaderGaleria h1:before, 
+.articleHeadercontactate h1:before{
+	content: url(../../images/tij.png);
+    float: left;
+    position: relative;
+}
+
+.articleHeaderGaleria h1:after, 
+.articleHeadercontactate h1:after{
+	content: url(../../images/nav.png);
+    float: right;
+    position: relative;
 }

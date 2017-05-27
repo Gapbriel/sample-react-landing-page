@@ -1,3 +1,19 @@
+.App .description-flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: space-around;
+    min-height: 100vh;
+}
+
+.App .header-flex-container{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+}
+
 .App .articleDescription-container {
     position: absolute;
     height: 100%;
@@ -6,6 +22,10 @@
     flex-direction: column;
     justify-content: center;
     display: flex;
+}
+
+.App .contactate .header-flex-container{
+	justify-content: space-around;
 }
 
 .App .next-button {

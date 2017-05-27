@@ -1,8 +1,25 @@
-.home-article h1{
-	font-size: 5em;
+.home-article h1 {
+    font-size: 5em;
 }
 
 .home-article h1,
-.home-article h2{
-	color: #b69a6e;
+.home-article h2 {
+    color: #b69a6e;
+}
+
+.App .home-article .next-button a {
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.App .home-article .next-button{
+	margin-top: 10%;
+}
+
+.App .home-article .next-button a span.glyphicon{
+	top: 7px;
 }

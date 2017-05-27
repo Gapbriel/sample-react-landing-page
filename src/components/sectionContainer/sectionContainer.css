@@ -39,10 +39,3 @@
     width: 100%
 }
 
-.App .quienesSomos,
-.App .nuestroEstilo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: space-around
-}

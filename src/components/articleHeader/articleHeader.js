@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './articleDescription.css';
+import './articleHeader.css';
 
 
-class articleDescription extends Component {
+class articleHeader extends Component {
     render() {
         return (
             <article className={this.props.typeDescription.name +' col-md-5'} > 
@@ -13,4 +13,4 @@ class articleDescription extends Component {
     }
 }
 
-export default articleDescription;
+export default articleHeader;

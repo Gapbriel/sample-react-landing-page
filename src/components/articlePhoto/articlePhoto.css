@@ -1,0 +1,28 @@
+.article-photo-container.gallery_1 img{
+	content: url("../../images/galeria_1.jpg");
+}
+
+.article-photo-container.gallery_2 img{
+	content: url("../../images/galeria_2.jpg");
+}
+
+.article-photo-container.gallery_3 img{
+	content: url("../../images/galeria_3.jpg");
+}
+
+.article-photo-container.gallery_4 img{
+	content: url("../../images/galeria_4.jpg");
+}
+
+.article-photo-container.gallery_5 img{
+	content: url("../../images/galeria_5.jpg");
+}
+
+.article-photo-container.gallery_6 img{
+	content: url("../../images/galeria_6.jpg");
+}
+
+.article-photo-container img{
+	width: 100%;
+	height: 100%;
+}

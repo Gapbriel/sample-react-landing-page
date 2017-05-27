@@ -9,9 +9,9 @@ class SectionContainer extends Component {
     render() {
         return (
           <div>
-            <HomeSection></HomeSection>
-            <DescriptionSection name="quienesSomos"></DescriptionSection>
-            <DescriptionSection name="nuestroEstilo"></DescriptionSection>
+            <HomeSection nextContainerId="quienesSomos" nextTarget="quienesSomosTarget"></HomeSection>
+            <DescriptionSection name="quienesSomos" nextContainerId="nuestroEstilo" nextTarget="nuestroEstiloTarget"></DescriptionSection>
+            <DescriptionSection name="nuestroEstilo" nextContainerId="galeria" nextTarget="galeriaTarget"></DescriptionSection>
             <DescriptionSection name="galeria"></DescriptionSection>
             <DescriptionSection name="contactate"></DescriptionSection>
             <FooterSection></FooterSection>

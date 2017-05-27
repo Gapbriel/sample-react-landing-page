@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll'
 import NextSectionButton from '../../components/nextSectionButton/nextSectionButton.js';
 import ArticleDescription from '../../components/articleDescription/articleDescription.js';
 import GallerySection from '../../components/gallerySection/gallerySection.js';
 import FormContacto from '../../components/formContacto/formContacto.js';
 import './descriptionSection.css';
 
-
+const Element    = Scroll.Element;
 class descriptionSection extends Component {
     constructor(props) {
         super(props);
@@ -41,7 +42,7 @@ class descriptionSection extends Component {
                         <div className="articleDescription-container">
                             <ArticleDescription typeDescription={this.state.quienesSomos}></ArticleDescription>
                         </div>
-                        <NextSectionButton></NextSectionButton>
+                        <NextSectionButton nextHref={this.props.nextTarget}></NextSectionButton>
                     </div>
                 );
                 break;
@@ -51,7 +52,7 @@ class descriptionSection extends Component {
                         <div className="articleDescription-container">
                             <ArticleDescription typeDescription={this.state.nuestroEstilo}></ArticleDescription> 
                          </div>   
-                        <NextSectionButton></NextSectionButton>
+                        <NextSectionButton nextHref={this.props.nextTarget}></NextSectionButton>
                     </div>
                 );
                 break;
@@ -68,14 +69,14 @@ class descriptionSection extends Component {
                     <div className="header-flex-container">
                             <ArticleDescription typeDescription={this.state.contactate}></ArticleDescription>
                             <FormContacto></FormContacto> 
-                      
                     </div>
                 )
                 break;
               default:
                 break;  
         }
-        return <section name={this.props.name} className={ this.props.name}>
+        return <section id={this.props.name}  name={this.props.name} className={ this.props.name}>
+                            <Element name={this.props.name + "Target"}></Element>
                             {description}
                         </section>;
     }

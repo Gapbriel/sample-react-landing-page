@@ -16,10 +16,10 @@ class homeSection extends Component {
     render() {
         // return (<NextSectionButton nextHref={'#' + this.props.name}></NextSectionButton>)
         return (
-          <section name={this.state.name} className={ this.state.name }> 
+          <section id={this.state.name} name={this.state.name} className={ this.state.name }> 
             <img src={logo} role="presentation" className="img-logo img-responsive hidden-xs"></img>
             <NavBarHeader></NavBarHeader>
-            <ArticleHome></ArticleHome>
+            <ArticleHome nextTarget={this.props.nextTarget}></ArticleHome>
           </section>
         );
     }

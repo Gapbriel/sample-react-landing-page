@@ -9,7 +9,7 @@ class NavBarHeader extends Component{
     onNavItemClick = (event) => {
       let elementTo = event.currentTarget.hash.split('#')[1];
        scroll.scrollTo(elementTo, {
-            duration: 1500,
+            duration: 1200,
             delay: 100,
             smooth: "easeInOutQuint"
         });
